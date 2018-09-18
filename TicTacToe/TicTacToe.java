@@ -32,7 +32,9 @@ public class TicTacToe
 		int i=r.nextInt(3);
 		int  j=r.nextInt(3);
 		System.out.println("Computer entered here");
-		if(a[i][j]=='-'){
+		if(a[i][j]=='-')
+		{
+
 			a[i][j]='O';
 		}
 		else
@@ -54,7 +56,8 @@ public class TicTacToe
 		{
 			System.out.println("Choose next location");
 			setVals();
-		}		
+		}
+		sc.close();		
 	}
 	public static void logic(String name) 
 	{
@@ -91,6 +94,7 @@ public class TicTacToe
 		System.out.println("please enter your name:");
 		Scanner sc=new Scanner(System.in);
 		String name=sc.nextLine();
+		sc.close();
 		format();
 		int i=0;
 		while(i<10)
@@ -124,5 +128,6 @@ public class TicTacToe
 			i++;
 		}
 		System.out.println("Draw");
+		
 	}
 }

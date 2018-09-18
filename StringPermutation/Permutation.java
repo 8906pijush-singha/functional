@@ -18,7 +18,7 @@ public class Permutation
     { 
         if (l == r)
         { 
-            count++;
+        //    count++;
             System.out.println(str);
         //    System.out.print(count+" ");
         } 

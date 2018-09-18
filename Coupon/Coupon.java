@@ -5,7 +5,7 @@ public class Coupon
     public static void main(String[] args) 
     {
         HashSet hs=new HashSet<Integer>();
-        System.out.println("Enter number of distinct coupon: ");
+        System.out.println("Enter number of distinct coupon: ");//should be less than 50
         Scanner sc = new Scanner(System.in);
         int no=sc.nextInt(),count=0,raNo=0;
         Random r =new Random();
