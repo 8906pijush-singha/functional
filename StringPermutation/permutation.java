@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Permutation 
+public class permutation 
 {
     static int count=0;  
     public static void main(String[] args) 
@@ -11,7 +11,7 @@ public class Permutation
         sc.close();
 
         int n = str.length(); 
-        Permutation permutation = new Permutation(); 
+        permutation permutation = new permutation(); 
         permutation.permute(str, 0, n-1);
     }
     private void permute(String str, int l, int r) 
@@ -19,17 +19,19 @@ public class Permutation
         if (l == r)
         { 
            count++;
-           System.out.println(str);
            System.out.print(count+" ");
+           System.out.println(str);
+           
         } 
         else
         { 
             for (int i = l; i <= r; i++) 
             { 
                 str = swap(str,l,i);
-                System.out.println(str); 
+//                System.out.println(" str1"+str+" l="+l+" i="+i ); 
                 permute(str, l+1, r); 
-                str = swap(str,l,i); 
+//str = swap(str,l,i); 
+//                System.out.println(" str2"+str+" l="+l+" i="+i);
             } 
         } 
     } 
